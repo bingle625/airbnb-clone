@@ -39,3 +39,6 @@ class User(AbstractUser):
     )
 
     superhost = models.BooleanField(default=False)
+
+    def __str__(self) -> str:
+        return self.username
